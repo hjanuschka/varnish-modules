@@ -38,6 +38,10 @@
 #include <netinet/tcp.h>
 #include <netinet/in.h>
 
+#ifndef SOL_TCP
+#define SOL_TCP IPPROTO_TCP
+#endif
+
 #ifndef TCP_CONGESTION
 #define TCP_CONGESTION	13
 #endif
